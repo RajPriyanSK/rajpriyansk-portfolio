@@ -1,0 +1,5 @@
+- **High-Impact Hero & Visual Identity:** Implement a bold, minimalist landing section featuring high-contrast typography and a clear personal mission statement, mirroring the brutalist aesthetic and layout of the reference site.
+- **Dynamic Project Gallery:** Create a grid-based showcase for academic and personal projects using large-scale visual cards that emphasize work samples, including titles and brief descriptions that appear on interaction.
+- **Academic & Professional Profile:** Include a dedicated section for educational background, technical skills, and a brief biography, integrated seamlessly into the site's vertical scrolling flow.
+- **Streamlined Navigation & Interaction:** Develop a simplified navigation system and smooth transitions that allow visitors to move effortlessly between the work, about, and contact sections.
+- **Integrated Contact & Social Hub:** Design a prominent footer or contact area featuring direct links to professional platforms (e.g., LinkedIn, GitHub) and a clear call-to-action for inquiries.
