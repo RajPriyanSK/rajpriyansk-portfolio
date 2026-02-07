@@ -6,60 +6,60 @@ import { ArrowRight, Menu, ExternalLink, Github, Linkedin, Twitter, Mail, ArrowU
 const PROJECTS = [
   {
     id: "01",
-    title: "Neural Network Visualizer",
-    category: "Machine Learning / React",
+    title: "AI Classroom Assistant",
+    category: "Full Stack / React & Python",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1632&auto=format&fit=crop",
-    description: "An interactive tool to visualize real-time weight adjustments in deep learning models."
+    description: "Built an AI-powered classroom and meeting assistant to automate lecture transcription, summaries, and task extraction. Integrated role-based access for teachers and students, calendar sync for in-meeting notes and actions."
   },
   {
     id: "02",
-    title: "EcoTrack Mobile App",
-    category: "UI/UX / React Native",
+    title: "CyberSafe India",
+    category: "Cybersecurity / Open Source",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1470&auto=format&fit=crop",
-    description: "A sustainability-focused application helping users track and reduce their carbon footprint."
+    description: "A Cybersecurity awareness platform for safe digital practices and threat reporting. It scans URLs and indicates the risk levels of the URL."
   },
   {
     id: "03",
-    title: "Distributed Systems Lab",
-    category: "Backend / Go",
+    title: "TrustLayer AI: Secure AI Governance Gateway",
+    category: "Cybersecurity / Python",
     image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?q=80&w=1631&auto=format&fit=crop",
-    description: "Implementation of Raft consensus algorithm for a fault-tolerant key-value store."
-  },
-  {
-    id: "04",
-    title: "Generative Art Engine",
-    category: "Creative Coding / p5.js",
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1364&auto=format&fit=crop",
-    description: "Algorithmic art generator exploring geometric patterns and color theory."
+    description: "Engineered a real-time security proxy using Python and mimicproxy to intercept and sanitize sensitive data (PII) before reaching public LLMs like ChatGPT and Gemini. Implemented an invisible shield architecture that performs de-tokenization at the network edge."
   }
 ];
 
 const SKILLS = [
-  { category: "Languages", items: ["TypeScript", "Python", "Go", "C++", "SQL"] },
-  { category: "Frameworks", items: ["React", "Next.js", "Node.js", "Tailwind", "PyTorch"] },
-  { category: "Tools", items: ["Docker", "Git", "AWS", "PostgreSQL", "Figma"] },
+  { category: "Languages", items: ["Python", "SQL", "HTML5", "CSS3", "JavaScript"] },
+  { category: "Frameworks", items: ["React.js", "Node.js (Express)", "Flask"] },
+  { category: "Tools & Platforms", items: ["Git", "GitHub", "VS Code", "Docker", "Firebase"] },
+  { category: "Databases & ORM", items: ["MySQL", "Cloud Firestore", "Drizzle ORM"] },
+  { category: "Cloud & DevOps", items: ["Docker", "Firebase", "PythonAnywhere", "Vercel"] },
 ];
 
 const EDUCATION = [
   {
-    year: "2021 — 2025",
-    degree: "B.S. Computer Science",
-    school: "Stanford University",
-    details: "Specializing in Artificial Intelligence. GPA: 3.9/4.0"
+    year: "2023 — 2027",
+    degree: "Bachelor of Information Technology",
+    school: "Meenakshi Sundararajan Engineering College",
+    details: "CGPA: 8.3"
   },
   {
-    year: "2023",
-    degree: "Summer Research Fellow",
-    school: "MIT Media Lab",
-    details: "Explored human-computer interaction and generative interfaces."
+    year: "2021 — 2023",
+    degree: "HSC",
+    school: "Sri Sivaswami Kalaiaya HR Sec School",
+    details: "Percentage: 85%"
+  },
+  {
+    year: "2021",
+    degree: "SSLC",
+    school: "DAV Boys Senior Secondary School",
+    details: "Percentage: 83%"
   }
 ];
 
 const SOCIAL_LINKS = [
-  { name: "GitHub", icon: <Github size={20} />, href: "https://github.com" },
-  { name: "LinkedIn", icon: <Linkedin size={20} />, href: "https://linkedin.com" },
-  { name: "Twitter", icon: <Twitter size={20} />, href: "https://twitter.com" },
-  { name: "Email", icon: <Mail size={20} />, href: "mailto:hello@example.com" },
+  { name: "GitHub", icon: <Github size={20} />, href: "https://github.com/RajPriyanSK" },
+  { name: "LinkedIn", icon: <Linkedin size={20} />, href: "https://linkedin.com/in/raj-priyan-s-k" },
+  { name: "Email", icon: <Mail size={20} />, href: "mailto:rajsavvy@gmail.com" },
 ];
 
 export default function Home() {
@@ -127,20 +127,20 @@ export default function Home() {
         <div className="max-w-[1400px] mx-auto w-full">
           <div className="mb-8">
             <span className="inline-block px-3 py-1 border border-black text-[10px] font-bold uppercase tracking-[0.2em] mb-6">
-              Available for Internships 2024
+              Full Stack Developer & Cybersecurity Enthusiast
             </span>
           </div>
           
           <h1 className="text-[12vw] leading-[0.85] font-black mb-12">
-            CRAFTING <br />
-            <span className="text-transparent stroke-black" style={{ WebkitTextStroke: '2px black' }}>DIGITAL</span> <br />
-            EXPERIENCES
+            BUILDING <br />
+            <span className="text-transparent stroke-black" style={{ WebkitTextStroke: '2px black' }}>SECURE</span> <br />
+            WEB APPS
           </h1>
 
           <div className="flex flex-col md:flex-row justify-between items-end gap-8">
             <div className="max-w-md">
               <p className="text-xl md:text-2xl font-medium leading-tight mb-6">
-                Computer Science student focused on building functional, high-performance web applications and exploring the intersection of design and code.
+                Passionate Full Stack Developer and Cybersecurity enthusiast with a solid background in developing high-performance web applications and secure network designs.
               </p>
               <button 
                 onClick={() => scrollToSection('work')}
@@ -153,7 +153,7 @@ export default function Home() {
             
             <div className="hidden lg:block text-right">
               <div className="text-sm font-bold uppercase tracking-widest mb-2">Current Location</div>
-              <div className="text-2xl font-black">SAN FRANCISCO, CA</div>
+              <div className="text-2xl font-black">CHENNAI, TN</div>
             </div>
           </div>
         </div>
@@ -246,9 +246,9 @@ export default function Home() {
             <h2 className="text-[15vw] leading-[0.8] font-black tracking-tighter mb-12">LET'S <br /> CONNECT</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
               <div>
-                <p className="text-2xl md:text-3xl font-medium mb-8 max-w-md">Open for internship opportunities, research collaborations, or just a coffee chat.</p>
-                <a href="mailto:hello@example.com" className="inline-block text-xl font-black border-b-4 border-white pb-2 hover:pr-8 transition-all group">
-                  HELLO@EXAMPLE.COM <ArrowRight className="inline-block ml-2 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <p className="text-2xl md:text-3xl font-medium mb-8 max-w-md">Get in touch for opportunities, collaborations, or a quick chat about tech and innovation.</p>
+                <a href="mailto:rajsavvy@gmail.com" className="inline-block text-xl font-black border-b-4 border-white pb-2 hover:pr-8 transition-all group">
+                  RAJSAVVY@GMAIL.COM <ArrowRight className="inline-block ml-2 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </a>
               </div>
               <div className="grid grid-cols-2 gap-8">
@@ -267,7 +267,7 @@ export default function Home() {
               BACK TO TOP <ArrowUp size={14} />
             </button>
             <div className="flex gap-6 text-xs font-bold uppercase tracking-widest text-neutral-500">
-              <span>SF — CA</span>
+              <span>CHENNAI — TN</span>
               <span>{currentTime}</span>
             </div>
           </div>
