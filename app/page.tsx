@@ -36,7 +36,7 @@ const PROJECTS = [
 
 const SKILLS = [
   { category: "Languages", items: ["Python", "SQL", "HTML5", "CSS3", "JavaScript"] },
-  { category: "Frameworks", items: ["React.js", "Node.js (Express)", "Flask"] },
+  { category: "Frameworks", items: ["React.js", "Next.js", "Node.js (Express)", "Flask"] },
   { category: "Tools & Platforms", items: ["Git", "GitHub", "VS Code", "Docker", "Firebase"] },
   { category: "Databases & ORM", items: ["MySQL", "Cloud Firestore", "Drizzle ORM"] },
   { category: "Cloud & DevOps", items: ["Docker", "Firebase", "PythonAnywhere", "Vercel"] },
@@ -66,7 +66,7 @@ const EDUCATION = [
 const SOCIAL_LINKS = [
   { name: "GitHub", icon: <Github size={20} />, href: "https://github.com/RajPriyanSK" },
   { name: "LinkedIn", icon: <Linkedin size={20} />, href: "https://linkedin.com/in/raj-priyan-s-k" },
-  { name: "Email", icon: <Mail size={20} />, href: "mailto:rajsavvy@gmail.com" },
+  { name: "Email", icon: <Mail size={20} />, href: "mailto:rajdsavvy@gmail.com" },
 ];
 
 export default function Home() {
@@ -101,7 +101,7 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center p-6 mix-blend-difference text-white">
         <div className="text-xl font-black tracking-tighter uppercase cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-          <TypewriterHover>Portfolio.</TypewriterHover>
+          <TypewriterHover>PORTFOLIO.</TypewriterHover>
         </div>
         <div className="flex gap-8 items-center">
           <div className="hidden md:flex gap-8 text-sm font-bold uppercase tracking-widest">
@@ -131,29 +131,34 @@ export default function Home() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex flex-col justify-center px-6 pt-20">
-        <div className="max-w-[1400px] mx-auto w-full">
-          <div className="mb-8">
-            <span className="inline-block px-3 py-1 border border-black text-[10px] font-bold uppercase tracking-[0.2em] mb-6">
+      <section className="relative min-h-screen flex flex-col justify-center px-6 pt-32 pb-20">
+        {/* Background Text - Moved before content and set to lower z-index */}
+        <div className="absolute bottom-0 right-0 p-6 opacity-10 pointer-events-none z-0">
+          <div className="text-[20vw] font-black leading-none select-none">RAJ</div>
+        </div>
+
+        <div className="max-w-[1400px] mx-auto w-full relative z-10">
+          <div className="mb-12">
+            <span className="inline-block px-3 py-1 border border-black text-[10px] font-bold uppercase tracking-[0.2em] mb-6 bg-white/50 backdrop-blur-sm">
               <TypewriterHover>Full Stack Developer & Cybersecurity Enthusiast</TypewriterHover>
             </span>
           </div>
 
-          <div className="text-[12vw] leading-[0.85] font-black mb-12">
-            <TextReveal>BUILDING</TextReveal>
+          <div className="text-[12vw] leading-[0.85] font-black mb-12 mix-blend-difference text-black/90">
+            <TextReveal>RAJ</TextReveal>
             <TextReveal delay={0.1}>
-              <span className="text-transparent stroke-black" style={{ WebkitTextStroke: '2px black' }}>SECURE</span>
+              <span className="text-transparent stroke-black" style={{ WebkitTextStroke: '2px black' }}>PRIYAN S K</span>
             </TextReveal>
-            <TextReveal delay={0.2}>WEB APPS</TextReveal>
+            {/* <TextReveal delay={0.2}>WEB APPS</TextReveal> */}
           </div>
 
           <div className="flex flex-col md:flex-row justify-between items-end gap-8">
-            <div className="max-w-md">
-              <p className="text-xl md:text-2xl font-medium leading-tight mb-6">
+            <div className="max-w-md relative z-20">
+              <div className="text-xl md:text-2xl font-medium leading-tight mb-6 bg-white/40 backdrop-blur-sm p-2 rounded-lg -ml-2">
                 <StaggerText staggerDelay={0.01}>
                   Passionate Full Stack Developer and Cybersecurity enthusiast with a solid background in developing high-performance web applications and secure network designs.
                 </StaggerText>
-              </p>
+              </div>
               <SpotlightButton
                 onClick={() => scrollToSection('work')}
                 className="bg-black text-white px-8 py-4 font-bold uppercase tracking-widest hover:scale-105 transition-transform"
@@ -170,7 +175,7 @@ export default function Home() {
         </div>
 
         <div className="absolute bottom-0 right-0 p-6 opacity-10 pointer-events-none">
-          <div className="text-[20vw] font-black leading-none select-none">2024</div>
+          <div className="text-[20vw] font-black leading-none select-none">RAJ</div>
         </div>
       </section>
 
@@ -180,7 +185,7 @@ export default function Home() {
           <div className="flex justify-between items-end mb-16 border-b border-neutral-800 pb-8">
             <h2 className="text-6xl md:text-8xl font-black">SELECTED<br />WORKS</h2>
             <p className="hidden md:block text-sm font-bold uppercase tracking-widest text-neutral-400 max-w-xs text-right">
-              A collection of academic research and personal engineering projects.
+              A collection of academic and personal engineering projects.
             </p>
           </div>
 
@@ -265,8 +270,8 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
               <div>
                 <p className="text-2xl md:text-3xl font-medium mb-8 max-w-md">Get in touch for opportunities, collaborations, or a quick chat about tech and innovation.</p>
-                <a href="mailto:rajsavvy@gmail.com" className="inline-block text-xl font-black border-b-4 border-white pb-2 hover:pr-8 transition-all group">
-                  <TypewriterHover>RAJSAVVY@GMAIL.COM</TypewriterHover> <ArrowRight className="inline-block ml-2 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <a href="mailto:rajdsavvy@gmail.com" className="inline-block text-xl font-black border-b-4 border-white pb-2 hover:pr-8 transition-all group">
+                  <TypewriterHover>RAJDSAVVY@GMAIL.COM</TypewriterHover> <ArrowRight className="inline-block ml-2 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </a>
               </div>
               <div className="grid grid-cols-2 gap-8">
