@@ -189,7 +189,7 @@ export default function Home() {
       <section id="work" className="px-6 py-24 bg-black text-white">
         <div className="max-w-[1400px] mx-auto">
           <div className="flex justify-between items-end mb-16 border-b border-neutral-800 pb-8">
-            <h2 className="text-6xl md:text-8xl font-black">SELECTED<br />WORKS</h2>
+            <h2 className="text-6xl md:text-8xl font-black">PROJECTS</h2>
             <p className="hidden md:block text-sm font-bold uppercase tracking-widest text-neutral-400 max-w-xs text-right">
               A collection of academic and personal engineering projects.
             </p>
