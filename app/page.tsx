@@ -138,6 +138,12 @@ export default function Home() {
         </div>
 
         <div className="max-w-[1400px] mx-auto w-full relative z-10">
+          <div className="absolute top-0 right-0 hidden lg:block z-20 w-64 h-80 shadow-2xl skew-y-3 hover:skew-y-0 transition-transform duration-500">
+            <ImageReveal>
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop" alt="Raj Priyan S K" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out" />
+            </ImageReveal>
+          </div>
+
           <div className="mb-12">
             <span className="inline-block px-3 py-1 border border-black text-[10px] font-bold uppercase tracking-[0.2em] mb-6 bg-white/50 backdrop-blur-sm">
               <TypewriterHover>Full Stack Developer & Cybersecurity Enthusiast</TypewriterHover>
@@ -167,7 +173,7 @@ export default function Home() {
               </SpotlightButton>
             </div>
 
-            <div className="hidden lg:block text-right">
+            <div className="hidden lg:block text-right relative z-20">
               <div className="text-sm font-bold uppercase tracking-widest mb-2">Current Location</div>
               <div className="text-2xl font-black">CHENNAI, TN</div>
             </div>
