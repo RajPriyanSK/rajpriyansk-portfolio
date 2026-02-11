@@ -39,7 +39,7 @@ const SKILLS = [
   { category: "Frameworks", items: ["React.js", "Next.js", "Node.js (Express)", "Flask"] },
   { category: "Tools & Platforms", items: ["Git", "GitHub", "VS Code", "Docker", "Firebase"] },
   { category: "Databases & ORM", items: ["MySQL", "Cloud Firestore", "Drizzle ORM"] },
-  { category: "Cloud & DevOps", items: ["Docker", "Firebase", "PythonAnywhere", "Vercel"] },
+  { category: "Cloud & DevOps", items: ["Firebase", "PythonAnywhere", "Vercel"] },
 ];
 
 const EDUCATION = [
