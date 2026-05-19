@@ -35,7 +35,7 @@ const PROJECTS = [
 ];
 
 const SKILLS = [
-  { category: "Languages", items: ["Python", "SQL", "HTML5", "CSS3", "JavaScript"] },
+  { category: "Languages", items: ["Java","Python", "SQL", "HTML5", "CSS3", "JavaScript"] },
   { category: "Frameworks", items: ["React.js", "Next.js", "Node.js (Express)", "Flask"] },
   { category: "Tools & Platforms", items: ["Git", "GitHub", "VS Code", "Docker", "Firebase"] },
   { category: "Databases & ORM", items: ["MySQL", "Cloud Firestore", "Drizzle ORM"] },
@@ -138,9 +138,9 @@ export default function Home() {
         </div>
 
         <div className="max-w-[1400px] mx-auto w-full relative z-10">
-          <div className="absolute top-0 right-0 hidden lg:block z-20 w-64 h-80 shadow-2xl skew-y-3 hover:skew-y-0 transition-transform duration-500">
+          <div className="absolute top-0 right-0 hidden lg:block z-20 w-64 h-70 shadow-2xl skew-y-3 hover:skew-y-0 transition-transform duration-500">
             <ImageReveal>
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop" alt="Raj Priyan S K" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out" />
+              <img src="raj_pfp_main.png" alt="Raj Priyan S K" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out" />
             </ImageReveal>
           </div>
 
